@@ -8,7 +8,7 @@ class Todo
 			when /mswin|msys|mingw|cygwin|bccwin|wince|emc/
 				system "cls"
 			when /darwin|mac os|linux|solaris|bsd/
-				puts 'clear'
+				puts "\e[H\e[2J"
 		end
 
 	end
